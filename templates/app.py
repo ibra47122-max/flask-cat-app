@@ -5,8 +5,10 @@ app = Flask(__name__)
 
 # list of cat images
 images = [
-   
+    f"./static/cat{i}.gif" for i in range(1, 7)
     ]
+
+print(images)
 
 @app.route('/')
 def index():
